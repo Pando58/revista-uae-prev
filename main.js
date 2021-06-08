@@ -4,6 +4,8 @@ import { titulos, ids_videos, titulos_videos, ids_360, titulos_360} from './js/c
 // Materialize
 document.addEventListener('DOMContentLoaded', function() {
   M.Sidenav.init(document.querySelectorAll('.sidenav'));
+
+  setTimeout(() => document.body.classList.remove('wait'), 400);
 });
 
 

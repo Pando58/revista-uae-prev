@@ -7,10 +7,31 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+      body.wait > *:not(.pre-loader) {
+        display: none;
+      }
+    </style>
     
     <title>Revista - Universidad Alva Edison</title>
   </head>
-  <body>
+  <body class="wait">
+    <!-- Preloader -->
+    <div class="pre-loader">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-green-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Sidenav -->
     <ul id="slide-out" class="sidenav">
       <!-- Videos -->
