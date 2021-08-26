@@ -10,11 +10,17 @@ module.exports = {
           'Inter',
           ...defaultTheme.fontFamily.sans,
         ]
+      },
+      colors: {
+        'transparent-white': '#FFF2',
+        'transparent-black': '#0002'
       }
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active']
+    },
   },
   plugins: [],
 }
